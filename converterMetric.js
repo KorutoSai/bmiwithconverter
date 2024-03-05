@@ -10,8 +10,8 @@ function calcImpHeight() {
 
     let calcCm = (totalInch * 2.54).toFixed(2);
 
-    document.getElementById("heading").innerHTML = "Your height in Centimeter is: ";
-    document.getElementById("bmi-output").innerHTML = calcCm
+    document.getElementById("heading-height").innerHTML = "*Your height in Centimeter is: ";
+    document.getElementById("height-output").innerHTML = calcCm
    
 
 }
@@ -22,8 +22,8 @@ function calcImpWeight() {
   
     let calcKg = (weightPounds / 2.20462).toFixed(2);
 
-    document.getElementById("heading").innerHTML = "Your weight in Kilograms is: ";
-    document.getElementById("bmi-output").innerHTML = calcKg
+    document.getElementById("heading-weight").innerHTML = "*Your weight in Kilograms is: ";
+    document.getElementById("weight-output").innerHTML = calcKg
    
 
 }

@@ -16,8 +16,8 @@ function calcMetHeight() {
     
     
     
-    document.getElementById("heading").innerHTML = "Your height in Feet-inch is: ";
-    document.getElementById("bmi-output").innerHTML = calcInchSplitWho +" Feet and " + calcInchSplitDecCon + " Inches";
+    document.getElementById("heading-height").innerHTML = "*Your height in Feet-inch is: ";
+    document.getElementById("height-output").innerHTML = calcInchSplitWho +" Feet and " + calcInchSplitDecCon + " Inches";
    
 
 }
@@ -28,8 +28,8 @@ function calcMetWeight() {
   
     let calcPound = (weightKilo * 2.20462).toFixed(2);
 
-    document.getElementById("heading").innerHTML = "Your weight in Pounds is: ";
-    document.getElementById("bmi-output").innerHTML = calcPound
+    document.getElementById("heading-weight").innerHTML = "*Your weight in Pounds is: ";
+    document.getElementById("weight-output").innerHTML = calcPound
    
 
 }
