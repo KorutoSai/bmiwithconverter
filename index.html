@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+        <div class="links">
+            <p class="selected"><a href="index.html">Metric</a></p>    <p><a href="imperial.html">Imperial</a></p>   
+
+        </div>
+        <div class="calculator-container">
+            <h1>BMI Calculator</h1>
+            <label for="weight">Weight (In Kilograms): </label>
+            <input type="text" id="weight" name="weight" placeholder="Type weight here">
+            <label for="height">Height (In Centimeters): </label>
+            <input type="text" id="height" name="height" placeholder="Type height here">
+            <button onclick="bmiCalc()">submit</button> <button onclick="reload()">reload</button>
+
+        </div>
+    </div>
+
+
+        <div class="feedback-container">
+            <p id="heading"></p>
+            <p id="bmi-output"></p>
+            <p id="message"></p>
+            <a href="converterMetric.html"><p>Use Converter</p></a>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
