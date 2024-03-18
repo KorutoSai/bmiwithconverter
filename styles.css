@@ -5,12 +5,65 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --blue: #1877F2;
+    --white: #ffffff;
+    --gray:  #888f99;  
+    --bg: rgb(224, 227, 235);
+  }
+
+body{
+display: flex;
+flex-direction: column;
+
+align-items: center;
+background-color: var(--bg);
+
+}
+
+
+.main-wrapper{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+
+
+    
+
+
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue);
+    margin-bottom: 5vh;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.title{
+    color:var(--white);
+    padding: 10px 0 10px 30px;
+    
+}
+
+
+/*calculator */
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding:10px;
+    
+    
 
 }
 
@@ -19,6 +72,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--blue);
+    height:550px;
+    width: 400px;
+    padding:10px;
+    border-radius: 0 0 5px 5px ;
 
 }
 
@@ -31,25 +89,219 @@ width: 100%;
 }
 
 .selected{
-    border: solid black 1px;
+    
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    background-color: var(--blue);
+    padding:15px;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
 }
+
+.unselected{
+    
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--blue); 
+    opacity:0.8;  
+    padding:10px 5px 12px 10px;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.unselected:hover{ 
+    padding:12px 7px 14px 12px;
+    font-size: 1.2 rem;
+    font-weight: bold;
+    color:var(--white);
+
+
+}
+
+
+
+.calculator-container-wrapper{
+    background-color: var(--white);
+padding: 20px;
+height: 95%;
+width: 95%;
+border-radius: 5px;
+
+}
+
 
 .calculator-container{
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
-border: solid black 1px;
-padding: 20px;
+
+
 
 }
 
+.feet-inch{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.button-container{
+    padding: 20px;
+}
+.button{
+padding:5px;
+
+}
+
+
+.input-container{
+padding-top: 20px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.input-container-feet{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+
+.input-div{
+display: flex;
+flex-direction: row;
+
+}
+
+.input-div-feet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 190px;
+    
+    }
+
+
+.input
+{padding:10px; 
+    border-radius: 5px;
+}
+
+/*feedback*/
 .feedback-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     }
+
+ .feedback-answer{
+padding: 5px;
+font-weight: bold;
+ }
+ 
+.feedback-bmi{
+    padding: 10px;
+    font-weight: bold;
+
+ }
+
+/*feedback*/
+
+.converter-button{
+
+    background-color: var(--gray); 
+    border: none;
+    color: var(--white);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:20px;
+   border-radius: 5px;
+}
+.converter-button:hover{
+    padding: 15px 15px;
+    margin:13px;
+    font-size: 1.2rem;
+
+}
+
+/*calculator */
+
+/*article*/
+.article-wrapper{
+
+width: auto;
+
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+.article{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*table*/
+.table-wrapper{
+display: flex;
+justify-content: center;    
+}
+table {
+   font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+  }
+
+  th{
+  background-color:var(--blue);  
+  color: var(--white);
+  }
+  
+  td, th {
+    border: 1px solid #494949;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+  /*table*/
+
+.article-sections{
+padding: 20px 0 20px 0;
+
+}
+
+.article-paragraphs{
+    padding: 10px 0 10px 0;
+}
+
+.lists{
+    padding-left: 5%;
+}
+
+
+/*article*/
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue);
+    margin-top: 5vh;
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .main-wrapper { width: auto;
+      
+    }
+}

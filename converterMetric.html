@@ -9,49 +9,98 @@
 </head>
 
 <body>
-    <div class="main">
-        <div class="wrapper">
-            <div class="links">
-                <p><a href="converterImperial.html">Metric</a></p>
-                <p class="selected"><a href="converterMetric.html">Input Imperial</a></p>
 
+    <div class="main-wrapper">
+        <div class="header">
+            <div class="title">
+
+                <h1>HealthCalc</h1>
             </div>
-            <div class="calculator-container">
-                <div class="calc-lenght">
-                    <h1>Lenght Converter </h1>
-                    <label for="heightFeet">Height (In Feet): </label>
-                    <input type="text" id="heightFeet" name="heightFeet" placeholder="Type Feet Here">
-
-                    <label for="height">Height (In Inch): </label>
-                    <input type="heightInch" id="heightInch" name="heightInch" placeholder="Type Inch Here">
-
-                    <button onclick="calcImpHeight()">submit</button> <button onclick="reload()">reload</button>
-                </div>
-
-                <div class="calc-weight">
-                    <h1>Weight Converter </h1>
-                    <label for="heightFeet">Weight (In Pounds): </label>
-                    <input type="text" id="weightPound" name="heightFeet" placeholder="Type weight in pounds here">
-
-                    <button onclick="calcImpWeight()">submit</button> <button onclick="reload()">reload</button>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="feedback-container">
-            <p id="heading-height"></p>
-            <p id="height-output"></p>
-
-            <p id="heading-weight"></p>
-            <p id="weight-output"></p>
-
-
-            <a href="index.html"><p>Back to BMI Calculator</p></a>
 
         </div>
+        <div class="main">
+            <div class="main">
+                <div class="links">
+                    <p><a href="converterMetric.html" class="selected">Metric</a></p>
+                    <p><a href="converterImperial.html" class="unselected">Imperial</a></p>
 
-        <script src="converterMetric.js"></script>
+                </div>
+                <div class="wrapper">
+
+                    <div class="calculator-container-wrapper">
+
+                        <div class="calculator-container">
+                            <h3>Weight Converter</h3>
+
+                            <div class="input-container">
+                                <div class="input-div">
+                                    <label for="weight">Weight: </label>
+                                    <input class="input" type="text" id="weightPound" name="heightFeet"
+                                        autocomplete="off" placeholder="Type weight in pounds here">
+                                </div>
+                                <p> (In Pounds)</p>
+                            </div>
+                            <div class="button-container">
+                                <button onclick="calcImpWeight()" class="button">Submit</button> <button
+                                    onclick="reload()" class="button">Clear</button>
+                            </div>
+
+                            <h3>Lenght Converter</h3>
+                            <div class="feet-inch">
+                                <label for="heightFeet">Height: </label>
+                                <div class="input-container-feet">
+
+                                    <div class="input-div-feet">
+                                        <div>
+                                            <input class="input" type="text" id="heightFeet" name="heightFeet"
+                                                autocomplete="off" placeholder="Type Feet Here" maxlength="5" size="5">
+
+                                        </div>
+                                        <div>
+                                            <input class="input" type="heightInch" id="heightInch" name="heightInch"
+                                                autocomplete="off" placeholder="Type Inch Here" maxlength="5" size="5">
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <p>(In Feet-Inches)</p>
+
+                            <div class="button-container">
+                                <button onclick="calcImpHeight()" class="button">Submit</button> <button
+                                    onclick="reload()" class="button">Clear</button>
+                            </div>
+
+                        </div>
+                        <div class="feedback-container">
+
+                            <p id="heading-weight" class="feedback-answer"></p>
+                            <p id="weight-output" class="feedback-answer"></p>
+
+                            <p id="heading-height" class="feedback-answer"></p>
+                            <p id="height-output" class="feedback-answer"></p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <a href="index.html" class="converter-button">
+                        Back to BMI Calculator
+                    </a>
+                </p>
+
+            </div>
+
+            <script src="converterMetric.js"></script>
+        </div>
     </div>
 </body>
 

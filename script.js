@@ -15,23 +15,28 @@ function bmiCalc() {
 
     if (bmi < 18.5) {
 
-        document.getElementById("message").innerHTML = "Your BMI is " + bmi + " , so you are underweight.";
+        document.getElementById("message").innerHTML = "Your BMI is " + bmi + ", so you are underweight.";
 
     }
 
     else if (bmi >= 18.5 && bmi <= 24.9) {
 
-        document.getElementById("message").innerHTML ="Your BMI is " + bmi + " , so you are normal weight.";
+        document.getElementById("message").innerHTML ="Your BMI is " + bmi + ", so you are normal weight.";
 
     }
     else if (bmi >= 24.9 && bmi <= 30) {
 
-        document.getElementById("message").innerHTML ="Your BMI is " + bmi + " , so you are overweight.";
+        document.getElementById("message").innerHTML ="Your BMI is " + bmi + ", so you are overweight.";
+
+    }
+    else if (bmi >= 30.1 ) {
+
+        document.getElementById("message").innerHTML = "Your BMI is " + bmi + ", so you are obese.";
 
     }
 
     else {
-        document.getElementById("message").innerHTML = "Your BMI is " + bmi + " , so you are obese.";
+        document.getElementById("message").innerHTML = "Please input number";
     }
 
 }

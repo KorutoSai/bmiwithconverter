@@ -9,7 +9,7 @@ function calcMetHeight() {
 
     let calcInchSplitDec = (calcInch.split(".")[1])/100;
     let calcInchSplitWho = calcInch.split(".")[0];
-    let calcInchSplitDecCon = calcInchSplitDec*12;
+    let calcInchSplitDecCon = (calcInchSplitDec*12).toFixed(2);;
 
 
     
